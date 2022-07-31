@@ -1,0 +1,26 @@
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+#include "afxres.h"
+#undef APSTUDIO_READONLY_SYMBOLS
+
+IDI_ICON                ICON    DISCARDABLE     "clip2qr.ico"
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+CLIP2QR MENU DISCARDABLE 
+BEGIN
+    POPUP "MyMenu"
+    BEGIN
+        MENUITEM "ECC &Low",                        IDM_ECC_LOW
+        MENUITEM "ECC &Medium",                     IDM_ECC_MEDIUM
+        MENUITEM "ECC &Quartile",                   IDM_ECC_QUARTILE
+        MENUITEM "ECC &High",                       IDM_ECC_HIGH
+    END
+END
+
+#endif
