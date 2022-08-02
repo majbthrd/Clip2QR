@@ -24,11 +24,7 @@ Retrieve the C library:
 git submodule update --init --recursive
 ```
 
-and then go to the respective subdirectory ("windows" or "fltk") and do a make:
-
-```
-make
-```
+and then go to the subdirectory of choice ("windows" or "fltk") and follow the build instructions in the README.md there.
 
 ## Limitations
 
