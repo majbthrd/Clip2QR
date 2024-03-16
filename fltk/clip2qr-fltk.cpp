@@ -82,7 +82,7 @@ void QRwindow :: draw(void)
 	bool ok = qrcodegen_encodeText(
 			string, tempBuffer, qrcode, 
 			ecc_level, qrcodegen_VERSION_MIN, 
-			qrcodegen_VERSION_MAX, qrcodegen_Mask_0, true);
+			qrcodegen_VERSION_MAX, qrcodegen_Mask_AUTO, true);
 
 	if (!ok) return;
 

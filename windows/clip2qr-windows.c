@@ -134,7 +134,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			ok = qrcodegen_encodeText(pGlobal, tempBuffer,
 				qrcode, ecc_level,
 				qrcodegen_VERSION_MIN, qrcodegen_VERSION_MAX,
-				qrcodegen_Mask_0, true);
+				qrcodegen_Mask_AUTO, true);
 
 			GlobalUnlock(hGlobal);
 
