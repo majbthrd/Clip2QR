@@ -119,7 +119,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		HDC hdc = BeginPaint(hwnd, &ps);
 		RECT rect;
 		GetClientRect(hwnd, &rect);
-		OpenClipboard(hwnd);
+		while (!OpenClipboard(hwnd));
 
 		HGLOBAL hGlobal = GetClipboardData(CF_TEXT);
 		if (hGlobal != NULL)
